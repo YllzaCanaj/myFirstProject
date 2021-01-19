@@ -1,8 +1,9 @@
 <html>
     <head>
-        <link rel="stylesheet" href="https://unpkg.com/@fullcalendar/core@4.3.0/main.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/@fullcalendar/daygrid@4.3.0/main.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/@fullcalendar/timegrid@4.3.0/main.min.css">
+        <link rel="stylesheet" href="css/main.min.css">
+        <link rel="stylesheet" href="css/main.min2.css">
+        <link rel="stylesheet" href="css/main.min3.css">
+        
         <script src="js/main.min.js"></script>
         <script src="js/main.min2.js"></script>
         <script src="js/main.min3.js"></script>
@@ -21,11 +22,30 @@
             margin: 40px auto;
             }
 
+            
             /* change background color of event on month view */
+            
+            .fc-dayGridMonth-view .fc-day-grid-event {
+              background-color: red !important;
+            }  
+          
+          /* change font color of event on week view */
 
-            /* change font color of event on week view */
+            .fc-timeGridWeek-view .fc-title {
+              color: black;
+            }
 
             /* change width of today to 100px */
+
+            .fc-today-button.fc-button.fc-button-primary{
+              width: 100px;
+            }
+
+            
+
+            
+
+            
         </style>
     </head>
     <body>
