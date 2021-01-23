@@ -66,34 +66,33 @@
               
             }
             
-            #calendar{
-              display: none;
-            }
-            
             
         </style>
     </head>
-    <body>
+    <body onload="onloadFunction()">
 
       <!-- Add a button on top of the Calendar tittled Calendar with 50% of the screen ratio, bg color black, font color white, bg color on hover white, font color on hover black -->
       
       <div style="text-align: center;">
         <button id="button1" onclick="myFunction()">Calendar</button>
       </div>
-
-      <script>
-        function myFunction() {
-          var x = document.getElementById("calendar");
-          if (x.style.display === "none") {
-            x.style.display = "block";
-          } else {
-            x.style.display = "none";
-          }
-        }
-        </script>
-
         <div id='calendar' class="calendarClass"></div>
     </body>
+    <script>
+      function onloadFunction(){
+        var x = document.getElementById("calendar");
+        x.style.display = "none";
+      }
+
+      function myFunction() {
+        var x = document.getElementById("calendar");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
